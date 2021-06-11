@@ -1,0 +1,17 @@
+{
+  "name": "authentication_jwt",
+  "version": "1.0.0",
+  "description": "authentication using JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "utkarsh",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
