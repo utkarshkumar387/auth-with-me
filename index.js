@@ -1,7 +1,19 @@
 const Joi = require('joi');
 const express = require('express');
-
+const mongoose = require('mongoose');
 const app = express();
+
+// a1JFwdXusWOiFbBD //mongodb ps
+// const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://utkarsh:a1JFwdXusWOiFbBD@cluster0.gqq7f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+mongoose.connect(`${uri}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+},
+    () => console.log("connected to db")
+);
+
+
 app.use(express.json());
 
 const users = [
